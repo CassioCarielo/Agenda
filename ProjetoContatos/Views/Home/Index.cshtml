@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProjetoContatos.Dom.Models.Agenda>
+
+@{
+    ViewBag.Title = "Agenda";
+}
+
+<h2>Agenda</h2>
+
+<p>
+    @Html.ActionLink("Novo Contato", "Cadastrar")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.IdPessoa)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.NomePessoa)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.IdContato)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.NomeContato)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.IdTipoContato)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.IdPessoa)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.NomePessoa)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.IdContato)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeContato)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.IdTipoContato)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valor)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.IdContato })
+        </td>
+    </tr>
+}
+
+</table>
