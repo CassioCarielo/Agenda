@@ -83,6 +83,23 @@ namespace ProjetoContatos.Data
             }
         }
 
+        private List<Pessoa> TransformaReaderEmListaDeObjeto(SqlDataReader reader)
+        {
+            List<Pessoa> lista = new List<Pessoa>();
+
+            while (reader.Read())
+            {
+                Pessoa pessoa = new Pessoa();
+                pessoa.IdPessoa = Convert.ToInt32(reader["IdPessoa"]);
+                pessoa.Nome = reader["Nome"].ToString();
+
+                lista.Add(pessoa);
+            }
+            reader.Close();
+
+            return lista;
+        }
+
         public List<Agenda> ListarAgenda()
         {
             using (contexto = new Contexto())
@@ -107,7 +124,7 @@ namespace ProjetoContatos.Data
                     Agenda agenda = new Agenda();
                     agenda.IdPessoa = Convert.ToInt32(reader["IdPessoa"]);
                     agenda.NomePessoa = reader["NomePessoa"].ToString();
-                    agenda.IdPessoa = Convert.ToInt32(reader["IdContato"]);
+                    agenda.IdContato = Convert.ToInt32(reader["IdContato"]);
                     agenda.NomeContato = reader["NomeContato"].ToString();
                     agenda.IdTipoContato = Convert.ToInt32(reader["IdTipoContato"]);
                     agenda.Tipo = reader["Tipo"].ToString();
@@ -119,23 +136,6 @@ namespace ProjetoContatos.Data
 
                 return lista;
             }
-        }
-
-        private List<Pessoa> TransformaReaderEmListaDeObjeto(SqlDataReader reader)
-        {
-            List<Pessoa> lista = new List<Pessoa>();
-
-            while (reader.Read())
-            {
-                Pessoa pessoa = new Pessoa();
-                pessoa.IdPessoa = Convert.ToInt32(reader["IdPessoa"]);
-                pessoa.Nome = reader["Nome"].ToString();
-
-                lista.Add(pessoa);
-            }
-            reader.Close();
-
-            return lista;
         }
     }
 }

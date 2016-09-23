@@ -26,6 +26,7 @@ namespace ProjetoContatos.Srv
         {
             return pessoaRepositorio.ListarPorId(id);
         }
+
         public List<Agenda> ListarAgenda()
         {
             return pessoaRepositorio.ListarAgenda();

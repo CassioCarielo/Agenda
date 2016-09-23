@@ -10,9 +10,6 @@ namespace ProjetoContatos.Controllers
 
         public ActionResult Index()
         {
-            //var list = pessoaAplicacao.ListarTodos();
-            //return View(list);
-
             var list = pessoaAplicacao.ListarAgenda();
             return View(list);
         }
@@ -21,29 +18,35 @@ namespace ProjetoContatos.Controllers
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken] // Gera um código no formulário, para que seja recebido aqui. Assim, quando outro pessoa de outro site não conseguir postar aqui nessa View.
-        public ActionResult Cadastrar(Pessoa pessoa)
+        //[HttpPost]
+        //[ValidateAntiForgeryToken] // Gera um código no formulário, para que seja recebido aqui. Assim, quando outro pessoa de outro site não conseguir postar aqui nessa View.
+        public ActionResult CadastrarContato()
         {
-            if (ModelState.IsValid)
-            {
-                pessoaAplicacao.Salvar(pessoa);
-                return RedirectToAction("Index");
-            }
+            var list = pessoaAplicacao.ListarAgenda();
+            return View(list);
 
-            return View(pessoa);
+            //if (ModelState.IsValid)
+            //{
+            //    pessoaAplicacao.Salvar(pessoa);
+            //    return RedirectToAction("Index");
+            //}
+
+            //return View(pessoa);
         }
 
-        public ActionResult Editar(string id)
+        public ActionResult EditarContato(string id)
         {
-            var pessoa = pessoaAplicacao.ListarPorId(id);
+            var list = pessoaAplicacao.ListarAgenda();
+            return View(list);
 
-            if (pessoa == null)
-            {
-                return HttpNotFound();
-            }
+            //var pessoa = pessoaAplicacao.ListarPorId(id);
 
-            return View(pessoa);
+            //if (pessoa == null)
+            //{
+            //    return HttpNotFound();
+            //}
+
+            //return View(pessoa);
         }
 
         [HttpPost]

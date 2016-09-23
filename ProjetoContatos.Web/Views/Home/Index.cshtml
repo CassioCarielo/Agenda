@@ -49,7 +49,7 @@
                                                 @Html.DisplayFor(modelItem => item.Valor)
                                             </td>
                                             <td>
-                                                @Html.ActionLink("Editar", "Editar", new { id = item.IdContato })
+                                                @Html.ActionLink("Editar", "EditarContato", new { id = item.IdContato })
                                             </td>
                                         </tr>
                                     }
@@ -66,7 +66,7 @@
         </div>
         <!-- /.row -->
         <p>
-            @Html.ActionLink("Novo Contato", "Cadastrar")
+            @Html.ActionLink("Novo Contato", "CadastrarContato")
         </p>
     </div>
     <!-- /#page-wrapper -->
