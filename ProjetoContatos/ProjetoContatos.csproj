@@ -285,7 +285,7 @@
       <Project>{fedf288d-b2ac-4c05-8081-ffb86a41de67}</Project>
       <Name>ProjetoContatos.App</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjetosContatos.Common\ProjetoContatos.Dom.csproj">
+    <ProjectReference Include="..\ProjetosContatos.Dom\ProjetoContatos.Dom.csproj">
       <Project>{2232527e-a447-4ef5-bf46-6a52ebc7f690}</Project>
       <Name>ProjetoContatos.Dom</Name>
     </ProjectReference>

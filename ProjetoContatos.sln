@@ -18,11 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Data", "03 - Data", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Dominio", "04 - Dominio", "{1121EB38-B161-4532-B118-92D3CA1ABC7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Data", "ProjetoContatos.Dal\ProjetoContatos.Data.csproj", "{94CC9AAB-F05A-4954-80BA-B40CC3FE43D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Data", "ProjetoContatos.Data\ProjetoContatos.Data.csproj", "{94CC9AAB-F05A-4954-80BA-B40CC3FE43D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Srv", "ProjetoContatos.Bll\ProjetoContatos.Srv.csproj", "{47BAD87E-2AA3-4108-BEB6-80D17BDF6496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Srv", "ProjetoContatos.Srv\ProjetoContatos.Srv.csproj", "{47BAD87E-2AA3-4108-BEB6-80D17BDF6496}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Dom", "ProjetosContatos.Common\ProjetoContatos.Dom.csproj", "{2232527E-A447-4EF5-BF46-6A52EBC7F690}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContatos.Dom", "ProjetosContatos.Dom\ProjetoContatos.Dom.csproj", "{2232527E-A447-4EF5-BF46-6A52EBC7F690}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Aplication", "01 - Aplication", "{CB631E13-77AE-47DA-A4E0-95DA45AA3FD0}"
 EndProject

@@ -38,11 +38,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoContatos.Bll\ProjetoContatos.Srv.csproj">
+    <ProjectReference Include="..\ProjetoContatos.Srv\ProjetoContatos.Srv.csproj">
       <Project>{47bad87e-2aa3-4108-beb6-80d17bdf6496}</Project>
       <Name>ProjetoContatos.Srv</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjetosContatos.Common\ProjetoContatos.Dom.csproj">
+    <ProjectReference Include="..\ProjetosContatos.Dom\ProjetoContatos.Dom.csproj">
       <Project>{2232527e-a447-4ef5-bf46-6a52ebc7f690}</Project>
       <Name>ProjetoContatos.Dom</Name>
     </ProjectReference>
