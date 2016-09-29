@@ -13,6 +13,11 @@ namespace ProjetoContatos.Controllers
             var list = pessoaAplicacao.ListarAgenda();
             return View(list);
         }
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
         public ActionResult Cadastrar()
         {
             return View();
